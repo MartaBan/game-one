@@ -1,8 +1,4 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
 <html>
   <head>
     <meta charset="utf-8" />
@@ -10,16 +6,27 @@
     <title></title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="" />
+    <link rel="stylesheet" href="game-one-styles.css" />
   </head>
-  <body>
-    <!--[if lt IE 7]>
-      <p class="browsehappy">
-        You are using an <strong>outdated</strong> browser. Please
-        <a href="#">upgrade your browser</a> to improve your experience.
-      </p>
-    <![endif]-->
-
-    <script src="" async defer></script>
+  <body background="bg.jpg">
+    <div class="header2">
+      <h2>Podaj liczbę od 0-100</h2>
+    </div>
+    <div class="inputNumber">
+      <input type="number" id="userNumber" />
+    </div>
+    <div class="button1">
+      <button onclick="startGame()">Zagraj</button>
+    </div>
+    <div class="header3">
+      <h3>
+        Liczba prób:
+        <span id="tryNumber"></span>
+      </h3>
+    </div>
+    <div class="success" id="win"></div>
+    <div class="fail1" id="lost1"></div>
+    <div class="fail2" id="lost2"></div>
+    <script src="./game-one-script.js"></script>
   </body>
 </html>
